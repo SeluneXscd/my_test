@@ -31,3 +31,5 @@ my_test_lambda/src/test/
 my_test_mongo/.mvn/
 
 /.idea/
+
+/my_test_mongo/HELP.md
