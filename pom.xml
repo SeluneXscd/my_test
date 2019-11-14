@@ -14,29 +14,38 @@
         <module>my_test_lambda</module>
     </modules>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <data.mongodb.version>RELEASE</data.mongodb.version>
+        <mongodb.driver.version>3.8.2</mongodb.driver.version>
+        <spring.boot.devtools.version>RELEASE</spring.boot.devtools.version>
+        <lombok.version>RELEASE</lombok.version>
+        <springfox.swagger2.version>RELEASE</springfox.swagger2.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
-            <version>RELEASE</version>
+            <version>${data.mongodb.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
-            <version>3.8.2</version>
+            <version>${mongodb.driver.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-            <version>RELEASE</version>
+            <version>${spring.boot.devtools.version}</version>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>RELEASE</version>
+            <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -55,7 +64,7 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>RELEASE</version>
+            <version>${springfox.swagger2.version}</version>
         </dependency>
     </dependencies>
 
