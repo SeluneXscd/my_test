@@ -10,8 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>my_test_lambda</artifactId>
-
+    <artifactId>my_test_postgresql</artifactId>
 
 
 </project>

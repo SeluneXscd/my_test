@@ -12,7 +12,7 @@ import java.util.List;
  * @Time 2019/11/12 15:39
  */
 
-public class Lambda01 {
+public class FilteringApples {
 	
 	public static void main(String[] args) {
 		List<Apple> appleList = new ArrayList<>();
