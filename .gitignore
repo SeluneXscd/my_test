@@ -33,5 +33,6 @@ my_test_mongo/.mvn/
 /.idea/
 
 /my_test_mongo/HELP.md
-/my_test_mongo/my_test_mongo.iml
-/my_test_lambda/my_test_lambda.iml
+
+/*/*.iml
+
