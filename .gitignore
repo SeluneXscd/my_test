@@ -34,5 +34,6 @@ my_test_mongo/.mvn/
 
 /my_test_mongo/HELP.md
 
-/*/*.iml
+/*/my_test*.iml
+
 
