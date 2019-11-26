@@ -15,4 +15,13 @@ public class Apple implements Serializable {
 	private Long id;
 	private Integer quantity;
 	private Double weight;
+	private String color;
+
+	public static boolean isGreenApple(Apple apple) {
+		return "green".equals(apple.getColor());
+	}
+
+	public static boolean isHeavyApple(Apple apple) {
+		return apple.getWeight() > 150;
+	}
 }

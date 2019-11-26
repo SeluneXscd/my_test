@@ -4,6 +4,8 @@ import com.selune.test.lambda.model.Apple;
 import java.util.ArrayList;
 import java.util.Comparator;
 import static java.util.Comparator.comparing;
+import static java.util.Locale.filter;
+
 import java.util.List;
 
 /**
@@ -31,5 +33,30 @@ public class FilteringApples {
 		
 		// Java 8 Lambda
 		appleList.sort(comparing(Apple::getWeight));
+
+        filterApples(appleList, Apple::isGreenApple);
+        filterApples(appleList, Apple::isHeavyApple);
+
+        filterApples(appleList, (apple -> "green".equals(apple.getColor())));
+        filterApples(appleList, (apple -> apple.getWeight() > 150));
+
 	}
+
+    public interface Predicate<T>{
+        /**
+         * @param t
+         * @return
+         */
+        Boolean test(T t);
+    }
+
+    private static List<Apple> filterApples(List<Apple> appleList, Predicate<Apple> predicate) {
+	    List<Apple> result = new ArrayList<>();
+        for (Apple apple : appleList) {
+            if (predicate.test(apple)) {
+                result.add(apple);
+            }
+        }
+        return result;
+    }
 }
