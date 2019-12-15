@@ -2,3 +2,5 @@
 
 - [Mongo Demo](./my_test_mongo)
 - [Lambda Demo](./my_test_lambda)
+- [Redis Demo](./my_test_redis)
+- [PostgreSql Demo](./my_test_postgresql)

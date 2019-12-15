@@ -26,8 +26,6 @@ hs_err_pid*
 
 .gitignore
 .idea/
-my_test_lambda/src/main/resources/
-my_test_lambda/src/test/
 my_test_mongo/.mvn/
 
 /.idea/
