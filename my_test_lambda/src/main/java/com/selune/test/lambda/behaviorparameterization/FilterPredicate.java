@@ -7,8 +7,10 @@ package com.selune.test.lambda.behaviorparameterization;
 
 public interface FilterPredicate<T> {
 	/**
-	 * @param t
-	 * @return
+	 * xx
+	 *
+	 * @param t t
+	 * @return boolean
 	 */
 	boolean test(T t);
 }
