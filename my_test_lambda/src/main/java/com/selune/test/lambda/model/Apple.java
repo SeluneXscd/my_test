@@ -16,11 +16,16 @@ public class Apple implements Serializable {
 	private Integer quantity;
 	private Double weight;
 	private String color;
-
+	
+	public Apple(Double weight, String color) {
+		this.weight = weight;
+		this.color = color;
+	}
+	
 	public static boolean isGreenApple(Apple apple) {
 		return "green".equals(apple.getColor());
 	}
-
+	
 	public static boolean isHeavyApple(Apple apple) {
 		return apple.getWeight() > 150;
 	}
